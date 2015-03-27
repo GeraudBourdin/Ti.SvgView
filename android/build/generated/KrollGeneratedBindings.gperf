@@ -1,0 +1,18 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name SvgViewBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "com.geraudbourdin.svgview.SvgViewModule.h"
+#include "com.geraudbourdin.svgview.ViewProxy.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+com.geraudbourdin.svgview.SvgViewModule, ::com::geraudbourdin::svgview::SvgViewModule::bindProxy, ::com::geraudbourdin::svgview::SvgViewModule::dispose
+com.geraudbourdin.svgview.ViewProxy, ::com::geraudbourdin::svgview::svgview::ViewProxy::bindProxy, ::com::geraudbourdin::svgview::svgview::ViewProxy::dispose
+%%
