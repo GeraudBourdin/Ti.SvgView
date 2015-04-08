@@ -5,13 +5,13 @@
 version: 1.0.0
 apiversion: 2
 architectures: armeabi armeabi-v7a x86
-description: svg-view
-author: Your Name
-license: Specify your license
-copyright: Copyright (c) 2015 by Your Company
+description: svgview
+author: Géraud Bourdin
+license: MIT
+copyright: Géraud Bourdin
 
 # these should not be edited
-name: svg-view
+name: svgview
 moduleid: com.geraudbourdin.svgview
 guid: d2065fa0-388f-4bf7-95b8-bd52fbdb6e74
 platform: android

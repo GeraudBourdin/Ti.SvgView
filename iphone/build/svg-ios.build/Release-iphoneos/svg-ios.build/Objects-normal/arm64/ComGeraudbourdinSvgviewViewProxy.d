@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/gtwin/Documents/Titanium_Studio_Workspace/svg-ios/iphone/Classes/ComGeraudbourdinSvgviewViewProxy.m \
-  /Users/gtwin/Documents/Titanium_Studio_Workspace/svg-ios/iphone/Classes/ComGeraudbourdinSvgviewViewProxy.h \
+  /Users/gtwin/Desktop/TiSvgView/Module/iphone/Classes/ComGeraudbourdinSvgviewViewProxy.m \
+  /Users/gtwin/Desktop/TiSvgView/Module/iphone/Classes/ComGeraudbourdinSvgviewViewProxy.h \
   /Users/gtwin/Library/Application\ Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone/include/TiViewProxy.h \
   /Users/gtwin/Library/Application\ Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone/include/TiProxy.h \
   /Users/gtwin/Library/Application\ Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone/include/TiBase.h \

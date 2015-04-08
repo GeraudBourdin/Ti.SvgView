@@ -42,7 +42,6 @@
 		E88EA07F1ACD5A0400B1BFA6 /* CGPathAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E88E9FFB1ACD598C00B1BFA6 /* CGPathAdditions.h */; };
 		E88EA0801ACD5A0400B1BFA6 /* CharacterData.h in Headers */ = {isa = PBXBuildFile; fileRef = E88E9FFC1ACD598C00B1BFA6 /* CharacterData.h */; };
 		E88EA0811ACD5A0400B1BFA6 /* Comment.h in Headers */ = {isa = PBXBuildFile; fileRef = E88E9FFD1ACD598C00B1BFA6 /* Comment.h */; };
-		E88EA0821ACD5A0400B1BFA6 /* ContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E88E9FFE1ACD598C00B1BFA6 /* ContextFilterLogFormatter.h */; };
 		E88EA0831ACD5A0400B1BFA6 /* ConverterSVGToCALayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E88E9FFF1ACD598C00B1BFA6 /* ConverterSVGToCALayer.h */; };
 		E88EA0841ACD5A0400B1BFA6 /* CSSPrimitiveValue.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA0001ACD598C00B1BFA6 /* CSSPrimitiveValue.h */; };
 		E88EA0851ACD5A0400B1BFA6 /* CSSRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA0011ACD598C00B1BFA6 /* CSSRule.h */; };
@@ -54,12 +53,6 @@
 		E88EA08B1ACD5A0400B1BFA6 /* CSSValue.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA0071ACD598C00B1BFA6 /* CSSValue.h */; };
 		E88EA08C1ACD5A0400B1BFA6 /* CSSValue_ForSubclasses.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA0081ACD598C00B1BFA6 /* CSSValue_ForSubclasses.h */; };
 		E88EA08D1ACD5A0400B1BFA6 /* CSSValueList.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA0091ACD598C00B1BFA6 /* CSSValueList.h */; };
-		E88EA08E1ACD5A0400B1BFA6 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA00A1ACD598C00B1BFA6 /* DDAbstractDatabaseLogger.h */; };
-		E88EA08F1ACD5A0400B1BFA6 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA00B1ACD598C00B1BFA6 /* DDASLLogger.h */; };
-		E88EA0901ACD5A0400B1BFA6 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA00C1ACD598C00B1BFA6 /* DDFileLogger.h */; };
-		E88EA0911ACD5A0400B1BFA6 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA00D1ACD598C00B1BFA6 /* DDLog.h */; };
-		E88EA0921ACD5A0400B1BFA6 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA00E1ACD598C00B1BFA6 /* DDTTYLogger.h */; };
-		E88EA0931ACD5A0400B1BFA6 /* DispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA00F1ACD598C00B1BFA6 /* DispatchQueueLogFormatter.h */; };
 		E88EA0941ACD5A0400B1BFA6 /* Document+Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA0101ACD598C00B1BFA6 /* Document+Mutable.h */; };
 		E88EA0951ACD5A0400B1BFA6 /* Document.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA0111ACD598C00B1BFA6 /* Document.h */; };
 		E88EA0961ACD5A0400B1BFA6 /* DocumentCSS.h in Headers */ = {isa = PBXBuildFile; fileRef = E88EA0121ACD598C00B1BFA6 /* DocumentCSS.h */; };
@@ -206,7 +199,6 @@
 		E88E9FFB1ACD598C00B1BFA6 /* CGPathAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGPathAdditions.h; sourceTree = "<group>"; };
 		E88E9FFC1ACD598C00B1BFA6 /* CharacterData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterData.h; sourceTree = "<group>"; };
 		E88E9FFD1ACD598C00B1BFA6 /* Comment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
-		E88E9FFE1ACD598C00B1BFA6 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
 		E88E9FFF1ACD598C00B1BFA6 /* ConverterSVGToCALayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConverterSVGToCALayer.h; sourceTree = "<group>"; };
 		E88EA0001ACD598C00B1BFA6 /* CSSPrimitiveValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSPrimitiveValue.h; sourceTree = "<group>"; };
 		E88EA0011ACD598C00B1BFA6 /* CSSRule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSRule.h; sourceTree = "<group>"; };
@@ -218,12 +210,6 @@
 		E88EA0071ACD598C00B1BFA6 /* CSSValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSValue.h; sourceTree = "<group>"; };
 		E88EA0081ACD598C00B1BFA6 /* CSSValue_ForSubclasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSValue_ForSubclasses.h; sourceTree = "<group>"; };
 		E88EA0091ACD598C00B1BFA6 /* CSSValueList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSSValueList.h; sourceTree = "<group>"; };
-		E88EA00A1ACD598C00B1BFA6 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
-		E88EA00B1ACD598C00B1BFA6 /* DDASLLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
-		E88EA00C1ACD598C00B1BFA6 /* DDFileLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
-		E88EA00D1ACD598C00B1BFA6 /* DDLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
-		E88EA00E1ACD598C00B1BFA6 /* DDTTYLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
-		E88EA00F1ACD598C00B1BFA6 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		E88EA0101ACD598C00B1BFA6 /* Document+Mutable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Document+Mutable.h"; sourceTree = "<group>"; };
 		E88EA0111ACD598C00B1BFA6 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
 		E88EA0121ACD598C00B1BFA6 /* DocumentCSS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentCSS.h; sourceTree = "<group>"; };
@@ -432,7 +418,6 @@
 				E88E9FFB1ACD598C00B1BFA6 /* CGPathAdditions.h */,
 				E88E9FFC1ACD598C00B1BFA6 /* CharacterData.h */,
 				E88E9FFD1ACD598C00B1BFA6 /* Comment.h */,
-				E88E9FFE1ACD598C00B1BFA6 /* ContextFilterLogFormatter.h */,
 				E88E9FFF1ACD598C00B1BFA6 /* ConverterSVGToCALayer.h */,
 				E88EA0001ACD598C00B1BFA6 /* CSSPrimitiveValue.h */,
 				E88EA0011ACD598C00B1BFA6 /* CSSRule.h */,
@@ -444,12 +429,6 @@
 				E88EA0071ACD598C00B1BFA6 /* CSSValue.h */,
 				E88EA0081ACD598C00B1BFA6 /* CSSValue_ForSubclasses.h */,
 				E88EA0091ACD598C00B1BFA6 /* CSSValueList.h */,
-				E88EA00A1ACD598C00B1BFA6 /* DDAbstractDatabaseLogger.h */,
-				E88EA00B1ACD598C00B1BFA6 /* DDASLLogger.h */,
-				E88EA00C1ACD598C00B1BFA6 /* DDFileLogger.h */,
-				E88EA00D1ACD598C00B1BFA6 /* DDLog.h */,
-				E88EA00E1ACD598C00B1BFA6 /* DDTTYLogger.h */,
-				E88EA00F1ACD598C00B1BFA6 /* DispatchQueueLogFormatter.h */,
 				E88EA0101ACD598C00B1BFA6 /* Document+Mutable.h */,
 				E88EA0111ACD598C00B1BFA6 /* Document.h */,
 				E88EA0121ACD598C00B1BFA6 /* DocumentCSS.h */,
@@ -583,7 +562,6 @@
 				E88EA07F1ACD5A0400B1BFA6 /* CGPathAdditions.h in Headers */,
 				E88EA0801ACD5A0400B1BFA6 /* CharacterData.h in Headers */,
 				E88EA0811ACD5A0400B1BFA6 /* Comment.h in Headers */,
-				E88EA0821ACD5A0400B1BFA6 /* ContextFilterLogFormatter.h in Headers */,
 				E88EA0831ACD5A0400B1BFA6 /* ConverterSVGToCALayer.h in Headers */,
 				E88EA0841ACD5A0400B1BFA6 /* CSSPrimitiveValue.h in Headers */,
 				E88EA0851ACD5A0400B1BFA6 /* CSSRule.h in Headers */,
@@ -595,12 +573,6 @@
 				E88EA08B1ACD5A0400B1BFA6 /* CSSValue.h in Headers */,
 				E88EA08C1ACD5A0400B1BFA6 /* CSSValue_ForSubclasses.h in Headers */,
 				E88EA08D1ACD5A0400B1BFA6 /* CSSValueList.h in Headers */,
-				E88EA08E1ACD5A0400B1BFA6 /* DDAbstractDatabaseLogger.h in Headers */,
-				E88EA08F1ACD5A0400B1BFA6 /* DDASLLogger.h in Headers */,
-				E88EA0901ACD5A0400B1BFA6 /* DDFileLogger.h in Headers */,
-				E88EA0911ACD5A0400B1BFA6 /* DDLog.h in Headers */,
-				E88EA0921ACD5A0400B1BFA6 /* DDTTYLogger.h in Headers */,
-				E88EA0931ACD5A0400B1BFA6 /* DispatchQueueLogFormatter.h in Headers */,
 				E88EA0941ACD5A0400B1BFA6 /* Document+Mutable.h in Headers */,
 				E88EA0951ACD5A0400B1BFA6 /* Document.h in Headers */,
 				E88EA0961ACD5A0400B1BFA6 /* DocumentCSS.h in Headers */,

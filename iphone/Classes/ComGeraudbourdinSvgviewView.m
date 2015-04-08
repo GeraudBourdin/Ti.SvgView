@@ -1,6 +1,8 @@
 #import "ComGeraudbourdinSvgviewView.h"
 #import "TiUtils.h"
 #import "SVGKit.h"
+#import "SVGKFastImageView.h"
+#import "SVGKLayeredImageView.h"
 
 @implementation ComGeraudbourdinSvgviewView
 - (void)initializeState

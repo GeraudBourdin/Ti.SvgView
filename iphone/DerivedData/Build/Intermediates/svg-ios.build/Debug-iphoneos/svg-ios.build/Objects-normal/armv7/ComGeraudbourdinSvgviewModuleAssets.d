@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/gtwin/Documents/Titanium_Studio_Workspace/Ti.AndroidSvgView/iphone/Classes/ComGeraudbourdinSvgviewModuleAssets.m \
-  /Users/gtwin/Documents/Titanium_Studio_Workspace/Ti.AndroidSvgView/iphone/Classes/ComGeraudbourdinSvgviewModuleAssets.h
+  /Users/gtwin/Desktop/TiSvgView/Module/iphone/Classes/ComGeraudbourdinSvgviewModuleAssets.m \
+  /Users/gtwin/Desktop/TiSvgView/Module/iphone/Classes/ComGeraudbourdinSvgviewModuleAssets.h

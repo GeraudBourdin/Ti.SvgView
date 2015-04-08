@@ -1,8 +1,8 @@
-#appname: svg-view
-#publisher: gtwin
+#appname: SvgView
+#publisher: Géraud Bourdin
 #url: 
 #image: appicon.png
 #appid: com.geraudbourdin.svgview
-#desc: undefined
+#desc: create an svg view with an .svg file.
 #type: module
 #guid: 9f080598-8db2-4dd6-8780-59d3820399ea
