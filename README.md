@@ -40,8 +40,8 @@ Or simply use it to set an image to a button :
 ```javascript
 var svg = svgView.createView({
 	image: "android.svg",
-	width: '350',
-	height: '350',
+	width: '50',
+	height: '50',
 	top: 0,
 	left: 0,
 	backgroundColor:'pink'
