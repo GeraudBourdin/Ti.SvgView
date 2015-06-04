@@ -1,39 +1,65 @@
-# svg-view Module
+# Ti.SvgView Module
 
 ## Description
 
-TODO: Enter your module description here
+This module simply create a view from an svg file by exposing the androidsvg-1.2.1 lib and the SVGKit 2.X for IOS lib. 
 
-## Accessing the svg-view Module
+## Quick Start
 
-To access this module from JavaScript, you would do the following:
+### Get it [![gitTio](http://gitt.io/badge.png)](http://gitt.io/component/com.geraudbourdin.svgview)
+Download the latest distribution ZIP-file and consult the [Titanium Documentation](http://docs.appcelerator.com/titanium/latest/#!/guide/Using_a_Module) on how install it, or simply use the [gitTio CLI](http://gitt.io/cli):
 
-    var svg_view = require("com.geraudbourdin.svgview");
+`$ gittio install com.geraudbourdin.svgview`
 
-The svg_view variable is a reference to the Module object.
+## Usage : 
 
-## Reference
+```javascript
+var svgView = require('com.geraudbourdin.svgview');
+var svg = svgView.createView({
+	image: "0.svg",
+	width: '350',
+	height: '350',
+	top: 0,
+	left: 0,
+	backgroundColor:'pink'
+});
 
-TODO: If your module has an API, you should document
-the reference here.
+$.container.add(svg);
+```
 
-### svg_view.function
+You can change your file dynamically with the setImage(path) function.
 
-TODO: This is an example of a module function.
+```javascript
+var image = 'android.svg';
+svg.setImage(image);
+```
 
-### svg_view.property
 
-TODO: This is an example of a module property.
+Or simply use it to set an image to a button :
 
-## Usage
+```javascript
+var svg = svgView.createView({
+	image: "android.svg",
+	width: '50',
+	height: '50',
+	top: 0,
+	left: 0,
+	backgroundColor:'pink'
+});
 
-TODO: Enter your usage example here
-
-## Author
-
-TODO: Enter your author name, email and other contact
-details you want to share here.
+var svgImage = svg.toImage().media;
+$.buttonSvg.setImage(svgImage);
+```
 
 ## License
+The MIT License (MIT)
 
-TODO: Enter your license/legal information here.
+Copyright © 2015 Géraud Bourdin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
