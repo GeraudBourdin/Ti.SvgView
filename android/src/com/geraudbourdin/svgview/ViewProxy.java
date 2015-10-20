@@ -65,8 +65,7 @@ public class ViewProxy extends TiViewProxy {
 			setNativeView(layout);
 		}
 
-		public void setImage() {
-			Log.d(LCAT, "image = " + image);
+		public void setImage() {			
 			if(image == null) 
 				return;
 			
