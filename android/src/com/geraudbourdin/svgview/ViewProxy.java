@@ -15,10 +15,10 @@ import java.io.InputStream;
 
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.annotations.Kroll;
+import org.appcelerator.kroll.common.AsyncResult;
+import org.appcelerator.kroll.common.Log;
 import org.appcelerator.kroll.common.TiMessenger;
 import org.appcelerator.titanium.TiApplication;
-import org.appcelerator.titanium.util.Log;
-import org.appcelerator.titanium.util.TiConfig;
 import org.appcelerator.titanium.io.TiBaseFile;
 import org.appcelerator.titanium.io.TiFileFactory;
 import org.appcelerator.titanium.proxy.TiViewProxy;
@@ -26,11 +26,10 @@ import org.appcelerator.titanium.view.TiUIView;
 
 import android.app.Activity;
 import android.os.Handler;
+import android.os.Message;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 
-import org.appcelerator.kroll.common.AsyncResult;
-import android.os.Message;
 import com.caverock.androidsvg.SVG;
 import com.caverock.androidsvg.SVGImageView;
 import com.caverock.androidsvg.SVGParseException;
@@ -39,15 +38,14 @@ import com.caverock.androidsvg.SVGParseException;
 @Kroll.proxy(creatableInModule = SvgViewModule.class)
 public class ViewProxy extends TiViewProxy {
 	// Standard Debugging variables
-	private static final String LCAT = "ViewProxy";
+	private static final String LCAT = "SvgViewModule.ViewProxy";
 
 	private String image;
 	TiUIView view;
 
 	private static final int MSG_SET_IMAGE = 70000;
-
-	@SuppressWarnings("deprecation")
-	private static final boolean DBG = TiConfig.LOGD;
+	
+	//private static final boolean DBG = TiConfig.LOGD;
 
 	private class SvgView extends TiUIView {
 
@@ -68,6 +66,10 @@ public class ViewProxy extends TiViewProxy {
 		}
 
 		public void setImage() {
+			Log.d(LCAT, "image = " + image);
+			if(image == null) 
+				return;
+			
 			String url = proxy.resolveUrl(null, image);
 			TiBaseFile file = TiFileFactory.createTitaniumFile( new String[] { url }, false);
 			try {
@@ -91,6 +93,10 @@ public class ViewProxy extends TiViewProxy {
 		@Override
 		public void processProperties(KrollDict d) {
 			super.processProperties(d);
+			if (d.containsKey("image")) {
+				image = d.getString("image");
+				setImage();			    			
+		    }
 		}
 	}
 
@@ -148,7 +154,7 @@ public class ViewProxy extends TiViewProxy {
 			}
 		}
 		// Updates the property on the JavaScript proxy object
-		setProperty("image", val, true);
+		setPropertyAndFire("image", val);
 	}
 
 	@Kroll.getProperty

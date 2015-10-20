@@ -1,3 +1,6 @@
 android/build/
 android/libs/
 android/bin/
+android/build.properties
+bin/
+.DS_Store
