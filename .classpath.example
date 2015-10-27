@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="android/src"/>
+	<classpathentry kind="src" path="android/build/.apt_generated"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="android/lib/androidsvg-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/<user>/Library/android-sdk-macosx/platforms/android-19/android.jar"/>
+	<classpathentry kind="lib" path="/Users/<user>/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA/android/kroll-apt.jar"/>
+	<classpathentry kind="lib" path="/Users/<user>/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA/android/kroll-common.jar"/>
+	<classpathentry kind="lib" path="/Users/<user>/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA/android/titanium.jar" sourcepath="/Users/<user>/Documents/SampleCode/titanium_mobile-3_5_1_GA/android/titanium/src/java"/>
+	<classpathentry kind="lib" path="/Users/<user>/Library/android-sdk-macosx/add-ons/addon-google_apis_x86-google-19/libs/maps.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

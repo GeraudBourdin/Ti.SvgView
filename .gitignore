@@ -1,0 +1,7 @@
+android/build/
+android/libs/
+android/bin/
+android/build.properties
+bin/
+.classpath
+.DS_Store
