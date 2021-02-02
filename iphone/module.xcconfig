@@ -1,11 +1,11 @@
 //
-// PLACE ANY BUILD DEFINITIONS IN THIS FILE AND THEY WILL BE 
+// PLACE ANY BUILD DEFINITIONS IN THIS FILE AND THEY WILL BE
 // PICKED UP DURING THE APP BUILD FOR YOUR MODULE
 //
 // see the following webpage for instructions on the settings
 // for this file:
 // http://developer.apple.com/mac/library/documentation/DeveloperTools/Conceptual/XcodeBuildSystem/400-Build_Configurations/build_configs.html
-// 
+//
 
 //
 // How to add a Framework (example)
@@ -26,4 +26,7 @@
 // IMPORTANT NOTE: always use $(inherited) in your overrides
 //
 //OTHER_LDFLAGS=$(inherited) -ObjC -framework CoreText -framework CoreImage  -framework libxml2.dylib -framework QuartzCore -framework CoreGraphics -framework UIKit
-OTHER_LDFLAGS=$(inherited) -framework QuartzCore
+
+// FRAMEWORK_SEARCH_PATHS="$(SRCROOT)/../../modules/iphone/com.geraudbourdin.svgview/5.0.0/platform"
+LD_RUNPATH_SEARCH_PATHS= $(inherited) "@executable_path/Frameworks" $(FRAMEWORK_SEARCH_PATHS)
+OTHER_LDFLAGS=$(inherited) -framework QuartzCore -framework SVGKit -framework CocoaLumberjack

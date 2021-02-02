@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>TiAndroidSvgView</name>
+	<name>TiSvgView</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -22,8 +22,7 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>com.appcelerator.titanium.mobile.module.nature</nature>
-		<nature>com.aptana.projects.webnature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
 </projectDescription>

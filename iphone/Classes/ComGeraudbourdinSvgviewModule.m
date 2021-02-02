@@ -47,13 +47,102 @@
 	[super shutdown:sender];
 }
 
-#pragma mark Cleanup
-
--(void)dealloc
+- (id)init
 {
-	// release any resources that have been retained by the module
-	[super dealloc];
+    // This is the designated initializer method and will always be called
+    // when the proxy is created.
+
+    //NSLog(@"[INFO] %@ init",self);
+
+    return [super init];
 }
+
+- (void)_destroy
+{
+    // This method is called from the dealloc method and is good place to
+    // release any objects and memory that have been allocated for the module.
+
+   NSLog(@"[INFO] %@ _destroy",self);
+
+    [super _destroy];
+}
+
+- (void)suspend:(id)sender
+{
+    // This method is called when the application is being suspended
+
+    //NSLog(@"[INFO] %@ suspend",self);
+
+    [super suspend:sender];
+}
+
+- (void)resume:(id)sender
+{
+    // This method is called when the application is being resumed
+
+    //NSLog(@"[INFO] %@ resume",self);
+
+    [super resume:sender];
+}
+
+- (void)resumed:(id)sender
+{
+    // This method is called when the application has been resumed
+
+    //NSLog(@"[INFO] %@ resumed",self);
+
+    [super resumed:sender];
+}
+
+- (id)_initWithPageContext:(id<TiEvaluator>)context
+{
+    // This method is one of the initializers for the proxy class. If the
+    // proxy is created without arguments then this initializer will be called.
+    // This method is also called from the other _initWithPageContext method.
+    // The superclass method calls the init and _configure methods.
+
+    //NSLog(@"[INFO] %@ _initWithPageContext (no arguments)",self);
+
+    return [super _initWithPageContext:context];
+}
+
+- (id)_initWithPageContext:(id<TiEvaluator>)context_ args:(NSArray *)args
+{
+    // This method is one of the initializers for the proxy class. If the
+    // proxy is created with arguments then this initializer will be called.
+    // The superclass method calls the _initWithPageContext method without
+    // arguments.
+
+    //NSLog(@"[INFO] %@ _initWithPageContext (arguments)",self);
+
+    return [super _initWithPageContext:context_ args:args];
+}
+
+- (void)_configure
+{
+    // This method is called from _initWithPageContext to allow for
+    // custom configuration of the module before startup. The superclass
+    // method calls the startup method.
+
+    //NSLog(@"[INFO] %@ _configure",self);
+
+    [super _configure];
+}
+
+- (void)_initWithProperties:(NSDictionary *)properties
+{
+    // This method is called from _initWithPageContext if arguments have been
+    // used to create the proxy. It is called after the initializers have completed
+    // and is a good point to process arguments that have been passed to the
+    // proxy create method since most of the initialization has been completed
+    // at this point.
+
+    //NSLog(@"[INFO] %@ _initWithProperties",self);
+
+    [super _initWithProperties:properties];
+}
+
+
 
 #pragma mark Internal Memory Management
 
@@ -64,44 +153,7 @@
 	[super didReceiveMemoryWarning:notification];
 }
 
-#pragma mark Listener Notifications
-
--(void)_listenerAdded:(NSString *)type count:(int)count
-{
-	if (count == 1 && [type isEqualToString:@"my_event"])
-	{
-		// the first (of potentially many) listener is being added
-		// for event named 'my_event'
-	}
-}
-
--(void)_listenerRemoved:(NSString *)type count:(int)count
-{
-	if (count == 0 && [type isEqualToString:@"my_event"])
-	{
-		// the last listener called for event named 'my_event' has
-		// been removed, we can optionally clean up any resources
-		// since no body is listening at this point for that event
-	}
-}
 
 #pragma Public APIs
-
--(id)example:(id)args
-{
-	// example method
-	return @"hello world";
-}
-
--(id)exampleProp
-{
-	// example property getter
-	return @"hello world";
-}
-
--(void)setExampleProp:(id)value
-{
-	// example property setter
-}
 
 @end

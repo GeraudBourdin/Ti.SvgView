@@ -44,7 +44,7 @@ public class ViewProxy extends TiViewProxy {
 	TiUIView view;
 
 	private static final int MSG_SET_IMAGE = 70000;
-	
+
 	//private static final boolean DBG = TiConfig.LOGD;
 
 	private class SvgView extends TiUIView {
@@ -65,10 +65,10 @@ public class ViewProxy extends TiViewProxy {
 			setNativeView(layout);
 		}
 
-		public void setImage() {			
-			if(image == null) 
+		public void setImage() {
+			if(image == null)
 				return;
-			
+
 			String url = proxy.resolveUrl(null, image);
 			TiBaseFile file = TiFileFactory.createTitaniumFile( new String[] { url }, false);
 			try {
@@ -94,7 +94,7 @@ public class ViewProxy extends TiViewProxy {
 			super.processProperties(d);
 			if (d.containsKey("image")) {
 				image = d.getString("image");
-				setImage();			    			
+				setImage();
 		    }
 		}
 	}
@@ -117,7 +117,7 @@ public class ViewProxy extends TiViewProxy {
 	public void handleCreationDict(KrollDict options) {
 		super.handleCreationDict(options);
 		if (options.containsKey("image")) {
-			image = (String) options.getString("image");
+			image = options.getString("image");
 		}
 	}
 

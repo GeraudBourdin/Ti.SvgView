@@ -8,7 +8,7 @@
 			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="android/lib/androidsvg-1.2.1.jar"/>
+	<classpathentry kind="lib" path="android/lib/androidsvg-1.3.jar"/>
 	<classpathentry kind="lib" path="/Users/<user>/Library/android-sdk-macosx/platforms/android-19/android.jar"/>
 	<classpathentry kind="lib" path="/Users/<user>/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA/android/kroll-apt.jar"/>
 	<classpathentry kind="lib" path="/Users/<user>/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA/android/kroll-common.jar"/>

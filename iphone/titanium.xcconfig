@@ -4,19 +4,14 @@
 // OF YOUR TITANIUM SDK YOU'RE BUILDING FOR
 //
 //
-TITANIUM_SDK_VERSION = 3.5.1.GA
-
+TITANIUM_SDK_VERSION = 9.3.2
 
 //
 // THESE SHOULD BE OK GENERALLY AS-IS
 //
-TITANIUM_SDK = /Users/gtwin/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA
+TITANIUM_SDK = /Users/$(USER)/Library/Application Support/Titanium/mobilesdk/osx/$(TITANIUM_SDK_VERSION)
 TITANIUM_BASE_SDK = "$(TITANIUM_SDK)/iphone/include"
-TITANIUM_BASE_SDK2 = "$(TITANIUM_SDK)/iphone/include/TiCore"
-TITANIUM_BASE_SDK3 = "$(TITANIUM_SDK)/iphone/include/JavaScriptCore"
-SVGKIT_HEADERS = "SVGKit"
+HEADER_SEARCH_PATHS= $(TITANIUM_BASE_SDK)
 
-HEADER_SEARCH_PATHS= $(TITANIUM_BASE_SDK) $(TITANIUM_BASE_SDK2) $(TITANIUM_BASE_SDK3) $(SVGKIT_HEADERS)
-
-
-
+// Added to support 9.x+
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(TITANIUM_SDK)/iphone/Frameworks/**"

@@ -2,7 +2,7 @@
 
 ## Description
 
-This module simply create a view from an svg file by exposing the androidsvg-1.2.1 lib and the SVGKit 2.X for IOS lib.
+This module simply create a view from an svg file by exposing the androidsvg-1.3 lib and the SVGKit 2.X for IOS lib.
 
 ## Quick Start
 
