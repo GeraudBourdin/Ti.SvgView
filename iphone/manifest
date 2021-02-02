@@ -2,9 +2,9 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.2
+version: 5.0.0
 apiversion: 2
-architectures: armv7 arm64 i386 x86_64
+architectures: arm64 armv7 i386 x86_64
 description: svgview
 author: Géraud Bourdin
 license: MIT
@@ -15,4 +15,4 @@ name: svgview
 moduleid: com.geraudbourdin.svgview
 guid: ac3aaad2-eda3-428a-87f2-5cb00e96713d
 platform: iphone
-minsdk: 3.5.1.GA
+minsdk: 9.3.2

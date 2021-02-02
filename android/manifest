@@ -2,9 +2,9 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.1
-apiversion: 2
-architectures: armeabi armeabi-v7a x86
+version: 6.0.0
+apiversion: 4
+architectures: arm64-v8a armeabi-v7a x86 x86_64
 description: svgview
 author: Géraud Bourdin
 license: MIT
@@ -15,4 +15,4 @@ name: svgview
 moduleid: com.geraudbourdin.svgview
 guid: d2065fa0-388f-4bf7-95b8-bd52fbdb6e74
 platform: android
-minsdk: 3.5.1.GA
+minsdk: 9.3.1
