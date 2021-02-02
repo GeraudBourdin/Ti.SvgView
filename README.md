@@ -51,6 +51,14 @@ var svgImage = svg.toImage().media;
 $.buttonSvg.setImage(svgImage);
 ```
 
+Alloy example:
+```xml
+<View id="svg" width="100" height="100" 
+	module="com.geraudbourdin.svgview" 
+	image="android.svg" />
+
+```
+
 ## Building module
 Before importing to the Appcelerator Studio or/and building module you must
 create this files from corresponding examples and fill their contents to your
